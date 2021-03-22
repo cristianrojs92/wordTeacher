@@ -7,7 +7,7 @@ import {
   Icon,
 } from './WordActivity.styles';
 
-export default function WordActivity() {
+export default function WordActivity({ wordSecret } : any) {
 
   const [nextDisabled, setNextDisabled] = useState(true);
   const [nextBackground, setNextBackground] = useState({ 
@@ -15,7 +15,6 @@ export default function WordActivity() {
   })
   const [flatTextSecureEntry, setFlatTextSecureEntry] = useState(true);
   const [wordText, setWordText] = useState('');
-  const wordSecret = 'trabajar';
   const [wordIcon, setWordIcon] = useState('');
 
 

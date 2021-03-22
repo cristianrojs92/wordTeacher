@@ -9,19 +9,19 @@ import {
   Word,
 } from './WordDisplay.styles';
 
-export default function WordDisplay() {
+export default function WordDisplay( { numberWordSelected, totalWords, nameWordSelected } : any) {
   return (
     <WordDisplayContainer>
       <WordDisplayGradient colors={['#373B44', '#4286f4']} >
 
       <HeaderWordDisplayContainer>
         <WordCounter>
-          1/30000
+          {numberWordSelected ? numberWordSelected : 0}/{totalWords ? totalWords : 0}
         </WordCounter>
       </HeaderWordDisplayContainer>
 
       <BodyWordDisplayContainer>
-        <Word> Work </Word>
+        <Word> {nameWordSelected} </Word>
       </BodyWordDisplayContainer>
 
       <FooterWordDisplayContainer>

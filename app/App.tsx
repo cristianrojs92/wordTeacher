@@ -9,7 +9,6 @@ import Main from './screens/main/Main';
 
 const Stack = createStackNavigator();
 
-
 export default function App() {
   return (
     <NavigationContainer>
